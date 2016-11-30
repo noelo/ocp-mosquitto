@@ -10,5 +10,5 @@ RUN chown -R mosquitto:mosquitto /opt/mqtt
 
 USER mosquitto
 EXPOSE 1883 9001
-CMD ["-c","/etc/mosquitto/mosquitto.conf"]
+CMD ["-c","/etc/mosquitto/mosquitto.conf","-v"]
 ENTRYPOINT ["/usr/sbin/mosquitto"]
