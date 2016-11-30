@@ -16,3 +16,6 @@ Point it to the exposed route on port 80
 * MQTT over SSL (with SNI)
 * Persistent storeage mounted onto OCP volumes
 * WS over TLS
+* Clean up build tools to minimise image size
+* Move to OCP enhanced build process
+* Auth
