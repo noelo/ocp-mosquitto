@@ -25,7 +25,7 @@ RUN mkdir -p /opt/mqtt/data
 RUN chown -R mosquitto: /etc/mosquitto
 RUN chown -R mosquitto: /opt/mqtt/
 
-USER mosquitto
+USER 10001
 EXPOSE 1883 9001
 CMD ["-c","/etc/mosquitto/ose-mosquitto.conf","-v"]
 ENTRYPOINT ["/usr/local/sbin/mosquitto"]
