@@ -1,4 +1,4 @@
-FROM centos:7
+FROM centos:latest
 MAINTAINER noel.oconnor@gmail.com
 
 RUN yum install -y --setopt=tsflags=nodocs wget mercurial make cmake openssl-devel c-ares-devel libuuid-devel git gcc gcc-c++ && yum -y update; yum clean all
